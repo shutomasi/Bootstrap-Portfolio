@@ -1,5 +1,8 @@
 /* navbar */
 /* hero section (jumbotron) */
+.jumbo {
+    background: url(../images/hero-background.jpg);
+}
 /* work section (cards) */
 /* skills section (cards) */
 /* about section (cards) */

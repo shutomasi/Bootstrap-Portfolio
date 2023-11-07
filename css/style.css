@@ -1,5 +1,66 @@
+body {
+    background-color: grey;
+}
+
 /* navbar */
+nav {
+    background-color: #575757;
+    border-bottom: 5px solid orange;
+}
+
+nav a {
+    color: white;
+}
+
+nav a:hover {
+    color: orange;
+}
+
 /* hero section (jumbotron) */
+.jumbo-selector {
+    background: url(../images/hero-background.jpg);
+    color: white;
+    -webkit-text-stroke: 1px black;
+    text-align: center;
+}
+
+h1 {
+    font-size: 96px;
+}
+
 /* work section (cards) */
-/* skills & about section (cards) */
+
+.row {
+    padding: 5px;
+}
+
 /* footer */
+footer {
+    background-color: #575757;
+    border-top: 5px solid orange;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer .footer-icons, footer .footer-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer i {
+    padding: 2px;
+}
+
+footer i:hover {
+    box-shadow: 2px;
+}
+
+.footer-text {
+    color: white;
+}
+
+.fa-square-x-twitter, .fa-square-github {
+    color: white;
+}

@@ -7,6 +7,8 @@
     <!-- linking bootstrap -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- linking fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <!-- linking style.css -->
     <link rel="stylesheet" href="css/style.css">
     <title>Sami's Portfolio</title>
@@ -32,67 +34,102 @@
     </nav>
 
     <!-- hero section (jumbotron) -->
-    <div class="p-5 mb-4 bg-body-tertiary rounded-3">
+    <div class="jumbotron p-5 mb-4 bg-body-tertiary rounded-3">
         <div class="container-fluid py-5">
             <h1 class="display-5 fw-bold">Welcome To My Portfolio</h1>
             <p class="col-md-8 fs-4">This webpage was created and styled using HTML and CSS using Bootstrap. It
                 showcases some of my work and skills that I currently have or am building on.</p>
-            <button class="btn btn-primary btn-lg" type="button">Contact Me</button>
-            <!-- LINK THIS TO A MODAL WITH EMAIL AND PHONE NUMBER -->
         </div>
     </div>
 
     <!-- work section (cards) -->
-    <div id="work" class="container text-center">
-        <div class="row">
-            <div class="col-lg-3 col-md-3 col-sm-12">
-                <div class="card" style="width: 18rem;">
-                    <img src="images/css-styling-store.png" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">CSS Styling Store</h5>
-                        <p class="card-text">A site that I styled using CSS.</p>
-                        <a href="https://smallfly4702.github.io/css-styling-store/" class="btn btn-primary">Visit this site</a>
-                    </div>
+    <div id="work" class="container-fluid"></div>
+    <div class="row">
+        <div class="col-lg-6 col-md-6 col-sm-12">
+            <div class="card">
+                <img src="images/css-styling-store.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">CSS Styling Store</h5>
+                    <p class="card-text">A site that I styled using CSS.</p>
+                    <a href="https://smallfly4702.github.io/css-styling-store/" class="btn btn-primary">Visit this
+                        site</a>
                 </div>
             </div>
-            <div class="col-lg-3 col-md-3 col-sm-12">
-                <div class="card" style="width: 18rem;">
-                    <img src="images/furniture-showcase.png" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Furniture Showcase</h5>
-                        <p class="card-text">A site I styled using CSS</p>
-                        <a href="https://smallfly4702.github.io/furniture-showcase/" class="btn btn-primary">Visit this site</a>
-                    </div>
+        </div>
+        <div class="col-lg-6 col-md-6 col-sm-12">
+            <div class="card">
+                <img src="images/furniture-showcase.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Furniture Showcase</h5>
+                    <p class="card-text">A site I styled using CSS</p>
+                    <a href="https://smallfly4702.github.io/furniture-showcase/" class="btn btn-primary">Visit this
+                        site</a>
                 </div>
             </div>
-            <div class="col-lg-3 col-md-4 col-sm-12">
-                <div class="card" style="width: 18rem;">
-                    <img src="images/jakes-eatery.png" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Jake's Eatery</h5>
-                        <p class="card-text">A site that I styled using CSS</p>
-                        <a href="https://smallfly4702.github.io/jakes-eatery/" class="btn btn-primary">Visit this site</a>
-                    </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-6 col-md-6 col-sm-12">
+            <div class="card">
+                <img src="images/jakes-eatery.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Jake's Eatery</h5>
+                    <p class="card-text">A site that I styled using CSS</p>
+                    <a href="https://smallfly4702.github.io/jakes-eatery/" class="btn btn-primary">Visit this site</a>
                 </div>
             </div>
-            <div class="col-lg-3 col-md-3 col-sm-12">
-                <div class="card" style="width: 18rem;">
-                    <img src="images/zen-garden.png" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Zen Garden</h5>
-                        <p class="card-text">A site that I edited using HTML</p>
-                        <a href="#" class="btn btn-primary">Visit this site</a>
-                    </div>
+        </div>
+        <div class="col-lg-6 col-md-6 col-sm-12">
+            <div class="card">
+                <img src="images/zen-garden.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Zen Garden</h5>
+                    <p class="card-text">A site that I edited using HTML</p>
+                    <a href="#" class="btn btn-primary">Visit this site</a>
                 </div>
             </div>
         </div>
     </div>
 
-    <!-- skills section (cards) -->
-    <!-- about section (cards) -->
+    <!-- skills & about section (cards) -->
+    <div class="container-fluid">
+        <div class="row">
+            <div id="skills" class="col-lg-6 col-md-6 col-sm-12">
+                <div class="card">
+                    <div class="card-header">
+                        Skills
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">Hypertext Markup Language</li>
+                        <li class="list-group-item">Cascading Style</li>
+                        <li class="list-group-item">Javascript</li>
+                    </ul>
+                </div>
+            </div>
+            <div id="about" class="col-lg-6 col-md-6 col-sm-12">
+                <div class="card">
+                    <div class="card-header">
+                        About Me
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Sami Chowdhury</h5>
+                        <p class="card-text">I am currently studying front-end web development as part of a skills
+                            bootcamp.</p>
+                        <h5 class="card-title">Contact Me:</h5>
+                        <ul>
+                            <li>Email: samic4702@gmail.com</li>
+                            <li>Phone: +447848146241</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <!-- footer -->
     <footer>
-
+        <i class="fa-brands fa-square-x-twitter"></i>
+        <i class="fa-brands fa-square-github"></i>
+        <h5>Copyright &copy; Sami Chowdhury 2023</h5>
     </footer>
 </body>
 

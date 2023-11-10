@@ -1,7 +1,7 @@
 # Bootstrap-Portfolio
 This is a portfolio, made using HTML and CSS using the Bootstrap framework, created for a skills bootcamp assignment.
 
-The deployed repository can be found at: https://smallfly4702.github.io/Bootstrap-Portfolio.
+The deployed repository can be found at: https://shutomasi.github.io/Bootstrap-Portfolio.
 
 # License 
 
